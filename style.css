@@ -1,0 +1,91 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+.first_nav{
+    background-color: black;
+    height: 50px;
+    margin-top: 0px;
+
+    
+}
+.first_nav ul li a{
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 15px;
+
+    
+}
+.first_nav ul li{
+    display: inline;
+    
+}
+.first_nav .left_list a{
+    padding-left: 15px;
+}
+.first_nav .right_nav{
+float: right;
+margin-right: 20px;
+
+}
+
+.first_nav .right_nav select{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 5px;
+}
+ /*techology part*/
+
+.first_section{
+    display: inline-flex;
+ 
+}
+.first_section .logo{
+   
+   display: inline-flex;
+}
+.first_section .send_message{
+    margin-left: 30%;
+}
+
+.first_section{
+    margin-top: 15px; 
+    margin-left: 10%;
+}
+.row .col-sm{
+    padding-left: 50px;
+
+}
+#logotext{
+    display: inline-flex;
+
+}
+#logotext h3{
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+ /*third section*/
+ .third_section .btn{
+     background-color: rgb(231, 45, 116);
+     color: white;
+     padding: 10px;
+     font-weight: 300;
+ }
+ .third_section a{
+     color: black;
+     text-decoration: none;
+     padding-left: 15px;
+ }
+.third_section select{
+    border: none;
+    font-weight: 600;
+}
+.third_section input{
+   margin-left: 30px;
+   padding: 5px;
+}
+.third_section{
+    font-weight: 600;
+}
