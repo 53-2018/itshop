@@ -89,3 +89,17 @@ margin-right: 20px;
 .third_section{
     font-weight: 600;
 }
+/*fourth section*/
+
+
+/*drop us a line section*/
+
+.contactsection{
+    margin-top: 50px;
+}
+#btn{
+    background-color: rgb(231, 45, 116);
+    margin-left: 85%;
+    padding: 8px;
+    color: white;
+}
