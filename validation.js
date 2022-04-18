@@ -24,5 +24,20 @@ if(!r.test(b)){
     return false;
     
 }
+}
+/* filters for Shop Page*/
+let articles=[
+  {type:"air conditoners", price:40,color:"white",size:"m"},
+  {type:"air conditoners", price:40,color:"black",size:"l"},
+  {type:"laptops", price:100},
+  {type:"laptops", price:500},
+  {type:"televisions", price:500,color:"black"},
+  {type:"televisions", price:1000,color:"black"},
+  {type:"air conditoners", price:40,color:"black",size:"s"},
+];
 
+for (let i = 0; i < articles.length; i++) {
+ if(articles[i].type=="televisions"){
+  
+}
 }

@@ -103,3 +103,31 @@ margin-right: 20px;
     padding: 8px;
     color: white;
 }
+
+/*SHOP PAGE*/
+
+/*Homme Card*/
+#home-card a{
+    text-decoration: none;
+    color: grey;
+}
+#tshirt{
+    width: 130px;
+    height: 130px;
+    
+}
+.card .tshirt a{
+    text-decoration: none;
+}
+#secondcard{
+    margin-top: 35px;
+}
+#thirdcard{
+    margin-top: 35px;
+}
+.checked{
+    color: gray;
+}
+#fourthrow{
+    margin-bottom: 100px;
+}
