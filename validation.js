@@ -28,7 +28,7 @@ if(!r.test(b)){
 /* filters for Shop Page*/
 let articles=[
   {name:'air conditoners', price:40,color:"white",size:"m"},
-  {name:'air conditoners', price:40,color:"black",size:"l"},
+  {name:'air conditoners', price:50,color:"black",size:"l"},
   {name:'laptops', price:100},
   {name:'laptops', price:500},
   {name:'televisions', price:500,color:"black"},
@@ -38,7 +38,7 @@ let articles=[
 let allArticles=[];
 
 for (let i = 0; i < articles.length; i++) {
- if(articles[i].price>500){
+ if(articles[i].price>40){
 
 allArticles.push(articles[i]);
 
