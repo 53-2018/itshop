@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pocetna strana</title>
+    <title>IT Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,93 +13,12 @@
 
 <body> 
     <div class="container"> 
-    <header> 
-   
-    <nav class="first_nav">
-        
-            <ul>
-                <li class="left_list">
-                    <a href="">Shipping</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact</a>
-                    <a href="">Track Order</a>
-                </li>
-                
-                <li class="right_nav">
-                    <a href="">Free 30 Day Money Back Guarantee</a>
-                    <select name="usd" id="">
-                        <option value="usd">USD</option>
-                        <option value="usd">EUR</option>
-                    </select>
-                    <select name="usd" id="">
-                        <option value="usd">English</option>
-                        <option value="usd">France</option>
-                    </select>
-
-                </li>
-            </ul>
-       
-    </nav>
-</header>
-
-
-<section class="first_section">
-        
-
- <div class="row ">
-    <div id="logotext" class="col-sm">
-        <img src="img/technical-support (1).png" width="40px" alt="">
-         <h3>technology</h3>
-    </div>
-    <div id="send_message" class="col-sm">
-        <p>Send us a message</p>
-        <a href="mailto:demo@demo.com">demo@demo.com</a>
-    </div>
-    <div class="col-sm">
-        <p>Need help? Call Us:</p>
-       <p>012 345 7892</p>
-    </div>
-    <divi id="icons" class="col-sm">
-        <img src="img/user.png" width="15px" alt="">0
-        <img src="img/heart.png" width="15px" alt=""> 0
-        <img src="img/shopping-bag.png" width="15px" alt="">
-    </div>
-  
-    </section>
-    <hr>
-    <section class="third_section">
-        
-                <select class="btn" name="usd" id="">
-                    <option value="categories">BROWSE CATEGORIES</option>
-                    
-                </select>
-                </button>
-
-                <a href=""> 
-                    <select name="" id="homme">
-                        <option value="">HOMME</option>
-                    </select>
-                </a>
-                <a href="shop.html"> SHOP
-                    <select name="" id="">
-                        <option value=""></option>
-                    </select>
-                </a>
-                <a href=""> PAGES
-                    <select name="" id="">
-                        <option value=""></option>
-                    </select>
-                </a>
-                <a href="">BLOGS</a>
-                <a href="">CONTACT</a>
-
-                <input type="text" placeholder="Search our catalog">
-                
-         
-    </section>
-
+    <?php
+    include_once 'header.php'
+    ?>
 </div>
-    <section id="druga_sekcija">
+<div class="container"> 
+    <section id="second_section">
         <div>
             <div>
                <button>MIDDWEEK DEALS</button>
@@ -107,7 +26,7 @@
                <p>Up to 40% off</p>
                <button>Shop Now ></button>
             </div>
-            <img src="img/P30pro-0cd6e6e.jpeg" alt="">
+            <img src="img/phonep30.jpeg" alt="">
         </div>
     <div>
         <div>
@@ -116,7 +35,7 @@
       <p>starting from <span>$900.99</span></p>
       <button>Shop Now ></button>
     </div>
-    <img src="img/macbook_air_space_gray_pdp_image_position-1_m1_chip__usen_1_1_6.jpeg" alt="">
+    <img src="img/macbookair.jpeg" alt="">
     </div>
 
 <div>
@@ -126,7 +45,7 @@
         <p>$259.99 <span>$199.99</span></p>
         <button>Shop Now ></button>
     </div>
-    <img src="img/Apple-AirPods-Max-Gold-Edition-by-Caviar.jpeg" alt="">
+    <img src="img/AppleAirPods.jpeg" alt="">
 </div>
 
     <!------------------------------------------->
@@ -134,7 +53,7 @@
     <section>
         <h4>Our Featured Offers</h4>
         <div class="card">
-            <img src="img/P30pro-0cd6e6e.jpeg" width="250" alt="">
+            <img src="img/phonep30.jpeg" width="250" alt="">
            <p>TABLETS</p>
            <h4>Samsung Galaxy M51</h4>
            <span class="fa fa-star"></span>
@@ -146,7 +65,7 @@
 
         </div>
         <div class="card">
-            <img src="img/P30pro-0cd6e6e.jpeg" width="250" alt="">
+            <img src="img/phonep30.jpeg" width="250" alt="">
            <p>TABLETS</p>
            <h4>Samsung Galaxy M51</h4>
            <span class="fa fa-star"></span>
@@ -158,7 +77,7 @@
 
         </div>
         <div class="card">
-            <img src="img/P30pro-0cd6e6e.jpeg" width="250" alt="">
+            <img src="img/phonep30.jpeg" width="250" alt="">
            <p>TABLETS</p>
            <h4>Samsung Galaxy M51</h4>
            <span class="fa fa-star"></span>
@@ -170,7 +89,7 @@
 
         </div>
         <div class="card">
-            <img src="img/P30pro-0cd6e6e.jpeg" width="250" alt="">
+            <img src="img/phonep30.jpeg" width="250" alt="">
            <p>TABLETS</p>
            <h4>Samsung Galaxy M51</h4>
            <span class="fa fa-star"></span>
@@ -183,14 +102,14 @@
         </div>
 
     </section>
-  <!------------------------------------------->
-    <section id="treca_sekcija">
+  <!----------THIRD SECTION------------------->
+    <section id="third_part">
         <h4>This Week Deals</h4>
         <p>307days:15hours : 33min:13sec</p>
 <h5>View All details</h5>
-<div class="dve_kartice">
+<div class="two_cards">
     <div class="card">
-        <img src="telefon1.webp" width="250" alt="">
+        <img src="img/phonep30.jpeg" width="250" alt="">
        <p>MOBILES</p>
        <h4>Samsung Galaxy M51</h4>
        <span class="fa fa-star"></span>
@@ -202,7 +121,7 @@
 
     </div>
     <div class="card">
-        <img src="mackbookair.webp" width="250" alt="">
+        <img src="img/macbookair.jpeg" width="250" alt="">
        <p>TABLETS</p>
        <h4>Lenovo ideaPad S540</h4>
        <span class="fa fa-star"></span>
@@ -216,31 +135,36 @@
 </div>
 
     </section>
-<!------------------------------------------->
+<!-------------------BEFORE FOOTER------------------------>
 
-<section id="pre_futera">
+<section id="before-footer">
    <div class="row">
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> CAMERAX
+        <img src="img/logo.png" width="40px" alt=""> CAMERAX
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> COMPUTERUP
+       <img src="img/logo.png" width="40px" alt=""> COMPUTERUP
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> DIGITLSTORE
+       <img src="img/logo.png" width="40px" alt=""> DIGITLSTORE
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> DIGITECH
+       <img src="img/logo.png" width="40px" alt=""> DIGITECH
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> ELECTRONICS
+       <img src="img/logo.png" width="40px" alt=""> ELECTRONICS
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> Games Spot
+       <img src="img/logo.png" width="40px" alt=""> Games Spot
        </div>
    </div>
 
 </section>
+</div>
+<!-------------------FOOTER----------------------->
+<?php
+include_once 'footer.php';
+?>
 
 </body>
 

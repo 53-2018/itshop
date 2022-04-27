@@ -131,3 +131,102 @@ margin-right: 20px;
 #fourthrow{
     margin-bottom: 100px;
 }
+/*FOOTER*/
+/*FOOTER*/
+footer
+{
+    background-color: #f2f2f2;
+}
+/*section search*/
+#search
+{
+    background-color: #262626;
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 80px;
+    padding:0 15% 0 15%;
+}
+#search > div:first-child
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#search > div:first-child >div >p, #search > div:first-child >div >h4
+{
+    margin: 0px 8px;
+}
+#search > div:nth-child(2)
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#search > div:nth-child(2)>input:first-child
+{
+    height: 26px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+#search > div:nth-child(2)>input:nth-child(2)
+{
+    height: 30px;
+    background-color: #ff4d94;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: none;
+}
+#search > div:last-child
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 10px;
+    opacity: 50%;
+}
+/*section id=links*/
+#links
+{
+    padding: 15px 15%;
+    display: flex;
+    justify-content:space-between;
+}
+#links > div >a
+{
+    text-decoration: none;
+    color: #b3b3b3;
+}
+
+/*section id=last*/
+#last
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+}
+#last > div
+{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+#last > div > div > h5, #last > div > div > p 
+{
+    padding: 0 5px;
+    margin: 0;
+}
+footer p
+{
+    color: #b3b3b3;
+}
+footer >p:last-of-type
+{
+    text-align: center;
+}
+footer > hr
+{
+    width: 70%;
+}

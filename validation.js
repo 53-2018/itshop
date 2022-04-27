@@ -27,17 +27,22 @@ if(!r.test(b)){
 }
 /* filters for Shop Page*/
 let articles=[
-  {type:"air conditoners", price:40,color:"white",size:"m"},
-  {type:"air conditoners", price:40,color:"black",size:"l"},
-  {type:"laptops", price:100},
-  {type:"laptops", price:500},
-  {type:"televisions", price:500,color:"black"},
-  {type:"televisions", price:1000,color:"black"},
-  {type:"air conditoners", price:40,color:"black",size:"s"},
+  {name:'air conditoners', price:40,color:"white",size:"m"},
+  {name:'air conditoners', price:40,color:"black",size:"l"},
+  {name:'laptops', price:100},
+  {name:'laptops', price:500},
+  {name:'televisions', price:500,color:"black"},
+  {name:'televisions', price:1000,color:"black"},
+  {name:'air conditoners', price:40,color:"black",size:"s"},
 ];
+let allArticles=[];
 
 for (let i = 0; i < articles.length; i++) {
- if(articles[i].type=="televisions"){
+ if(articles[i].price>500){
+
+allArticles.push(articles[i]);
+
+console.log(allArticles);
   
 }
 }

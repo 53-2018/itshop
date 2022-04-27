@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pocetna strana</title>
+    <title>IT Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -13,90 +13,10 @@
 
 <body> 
     <div class="container"> 
-    <header> 
    
-    <nav class="first_nav">
-        
-            <ul>
-                <li class="left_list">
-                    <a href="">Shipping</a>
-                    <a href="">FAQ</a>
-                    <a href="">Contact</a>
-                    <a href="">Track Order</a>
-                </li>
-                
-                <li class="right_nav">
-                    <a href="">Free 30 Day Money Back Guarantee</a>
-                    <select name="usd" id="">
-                        <option value="usd">USD</option>
-                        <option value="usd">EUR</option>
-                    </select>
-                    <select name="usd" id="">
-                        <option value="usd">English</option>
-                        <option value="usd">France</option>
-                    </select>
-
-                </li>
-            </ul>
-       
-    </nav>
-</header>
-
-
-<section class="first_section">
-        
-
- <div class="row ">
-    <div id="logotext" class="col-sm">
-        <img src="img/technical-support (1).png" width="40px" alt="">
-         <h3>technology</h3>
-    </div>
-    <div id="send_message" class="col-sm">
-        <p>Send us a message</p>
-        <a href="mailto:demo@demo.com">demo@demo.com</a>
-    </div>
-    <div class="col-sm">
-        <p>Need help? Call Us:</p>
-       <p>012 345 7892</p>
-    </div>
-    <divi id="icons" class="col-sm">
-        <img src="img/user.png" width="15px" alt="">0
-        <img src="img/heart.png" width="15px" alt=""> 0
-        <img src="img/shopping-bag.png" width="15px" alt="">
-    </div>
-  
-    </section>
-    <hr>
-    <section class="third_section">
-        
-                <select class="btn" name="usd" id="">
-                    <option value="categories">BROWSE CATEGORIES</option>
-                    
-                </select>
-                </button>
-
-                <a href=""> 
-                    <select name="" id="homme">
-                        <option value="">HOMME</option>
-                    </select>
-                </a>
-                <a href="shop.html"> SHOP
-                    <select name="" id="">
-                        <option value=""></option>
-                    </select>
-                </a>
-                <a href=""> PAGES
-                    <select name="" id="">
-                        <option value=""></option>
-                    </select>
-                </a>
-                <a href="">BLOGS</a>
-                <a href="">CONTACT</a>
-
-                <input type="text" placeholder="Search our catalog">
-                
-         
-    </section>
+<?php
+include_once 'header.php';
+?>
 
 </div>
   <!--------SHOP SECTION------------------->
@@ -142,7 +62,7 @@
         <div id="secondcard" class="card" style="width: 13rem;">
             <div id="home-card" class="card-body" >
             
-           <img id="tshirt" src="img/notes.jpeg" alt="">
+           <img id="tshirt" src="img/tvlcd.jpeg" alt="">
             </div>
           </div>
           <a href="" style="text-decoration: none; color: grey;"><h5 style="margin-left: 60px;padding-top: 15px;">Television</h5></a>
@@ -192,7 +112,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/P30pro-0cd6e6e.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/phonep30.jpeg" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -206,7 +126,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/macbook_air_space_gray_pdp_image_position-1_m1_chip__usen_1_1_6.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -277,7 +197,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/P30pro-0cd6e6e.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/phonep30.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -291,7 +211,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/macbook_air_space_gray_pdp_image_position-1_m1_chip__usen_1_1_6.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -319,7 +239,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/macbook_air_space_gray_pdp_image_position-1_m1_chip__usen_1_1_6.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -333,7 +253,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/macbook_air_space_gray_pdp_image_position-1_m1_chip__usen_1_1_6.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -347,7 +267,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/macbook_air_space_gray_pdp_image_position-1_m1_chip__usen_1_1_6.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -389,7 +309,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/P30pro-0cd6e6e.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/phonep30.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -403,7 +323,7 @@
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
-                    <img src="img/macbook_air_space_gray_pdp_image_position-1_m1_chip__usen_1_1_6.jpeg" alt="" width="180px" height="200px">   
+                    <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
                     <span>TABLETS</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
@@ -438,27 +358,31 @@
 <section id="pre_futera">
    <div class="row">
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> CAMERAX
+        <img src="img/logo.png" width="40px" alt=""> CAMERAX
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> COMPUTERUP
+       <img src="img/logo.png" width="40px" alt=""> COMPUTERUP
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> DIGITLSTORE
+       <img src="img/logo.png" width="40px" alt=""> DIGITLSTORE
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> DIGITECH
+       <img src="img/logo.png" width="40px" alt=""> DIGITECH
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> ELECTRONICS
+       <img src="img/logo.png" width="40px" alt=""> ELECTRONICS
        </div>
        <div class="col md-2">
-        <img src="technical-support.png" width="40px" alt=""> Games Spot
+       <img src="img/logo.png" width="40px" alt=""> Games Spot
        </div>
    </div>
 
 </section>
 </div>
+
+<?php
+include_once 'footer.php';
+?>
 </body>
 
 </html>
