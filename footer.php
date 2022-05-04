@@ -56,7 +56,7 @@
                     (+381) 69854-287 <br>
                     Mon to Sun: 10AM to 6PM <br>
                     demo@demo.com <br>
-                    Nemanjina 48, Cacak <br>
+                    Kralja Petra 100, Cacak <br>
                 </p>
             </div>
         </section>
@@ -92,4 +92,4 @@
             </div>
         </section>
         <hr>
-        <p>Copyright 2022 Technoloy. All rights reserved</p>
+        <p>Copyright 2022 Technology. All rights reserved</p>

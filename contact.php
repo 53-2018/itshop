@@ -136,7 +136,7 @@
     <p style="color: red;" id="comment_error"></p>
     <p style="color: red;" id="comment_error_email"></p>
 
-    <input class="btncolor" type="submit" name="commit" value="Post Comment"onclick="return check()">
+    <input id="btn" type="submit" name="commit" value="Post Comment"onclick="return check()">
 
   </div>
     </form>
@@ -160,6 +160,10 @@
 
 
 </section>
+<br>
+<?php
+include_once 'footer.php';
+?>
 
 <script src="validation.js"></script>
 

@@ -103,6 +103,9 @@ margin-right: 20px;
     padding: 8px;
     color: white;
 }
+.btncolor{
+    background-color: rgb(231, 45, 116);
+}
 
 /*SHOP PAGE*/
 
@@ -131,7 +134,7 @@ margin-right: 20px;
 #fourthrow{
     margin-bottom: 100px;
 }
-/*FOOTER*/
+
 /*FOOTER*/
 footer
 {
