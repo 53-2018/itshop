@@ -395,9 +395,19 @@ $articles=[
     ["name"=>"laptops","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
     ["name"=>"air conditioners","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
     ["name"=>"laptops","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
+
+    ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
+
+    ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
+
+    ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
 ]
 
 ?>
+<script>
+    let products=<?php echo json_decode($article);?>;
+    debugger;
+</script>
 
 
 </body>

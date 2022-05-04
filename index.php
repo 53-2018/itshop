@@ -18,6 +18,7 @@
     include_once 'header.php'
     ?>
 </div>
+<br>
 <div class="container"> 
     <section id="second_section">
         <div>

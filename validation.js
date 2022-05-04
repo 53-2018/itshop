@@ -26,7 +26,8 @@ if(!r.test(b)){
 }
 }
 /* filters for Shop Page*/
-let articles=[
+
+let articles1=[
   {name:'air conditoners', price:40,color:"white",size:"m"},
   {name:'air conditoners', price:50,color:"black",size:"l"},
   {name:'laptops', price:100},
@@ -37,12 +38,28 @@ let articles=[
 ];
 let allArticles=[];
 
-for (let i = 0; i < articles.length; i++) {
- if(articles[i].price>40){
+for (let i = 0; i < articles1.length; i++) {
+ if(articles1[i].price>40){
 
-allArticles.push(articles[i]);
+allArticles.push(articles1[i]);
 
 console.log(allArticles);
   
 }
+}
+
+function checkEmail()
+{    
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+    const myObj = JSON.parse(this.responseText);
+    // debugger;
+    document.getElementById("test").style.color=myObj.color;
+    document.getElementById("test").innerHTML = myObj.description;
+    document.getElementById("email").style.borderColor=myObj.color;
+    }
+    let e=document.getElementById("email").value;
+    console.log(e);
+    xmlhttp.open("GET", "checkemail.php?email="+e);
+    xmlhttp.send();
 }

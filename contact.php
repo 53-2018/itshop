@@ -21,7 +21,7 @@
                 <li class="left_list">
                     <a href="">Shipping</a>
                     <a href="">FAQ</a>
-                    <a href="">Contact</a>
+                    <a href="contact.php">Contact</a>
                     <a href="">Track Order</a>
                 </li>
                 
@@ -48,7 +48,7 @@
 
  <div class="row ">
     <div id="logotext" class="col-sm">
-        <img src="img/technical-support (1).png" width="40px" alt="">
+        <img src="img/logo.png" width="40px" alt="">
          <h3>technology</h3>
     </div>
     <div id="send_message" class="col-sm">
@@ -80,7 +80,7 @@
                         <option value="">HOMME</option>
                     </select>
                 </a>
-                <a href=""> SHOP
+                <a href="shop.php"> SHOP
                     <select name="" id="">
                         <option value=""></option>
                     </select>
@@ -104,7 +104,7 @@
     <p>Have a question or comment? Use the form below to send us a message or contact us by mail</p>
 
 
-    <form action="" name="myForm" >
+    <form action="" name="myForm" method="GET" >
         <div class="row"> 
 <div class="col-sm-6">
 
@@ -115,8 +115,8 @@
 </div>
           <div class="col-sm-6">
 
-            <input id="email" type="text" class="form-control" placeholder="your@email.com">
-            
+          <input onchange="checkEmail()" type= "text" id="email" placeholder="your@email.com"/>
+          <p id="test"></p>          
           </div>
 </div>
 
@@ -144,7 +144,18 @@
 </div>
 
 
-<!------------------------------------------->
+<!---------form validaion ajax---------->
+<?php
+
+
+
+
+?>
+<!---------form validaion js code---------->
+
+
+<!---------form validaion php code---------->
+
 
 
 
