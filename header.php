@@ -39,10 +39,8 @@
     </nav>
 </header>
 
-
 <section class="first_section">
         
-
  <div class="row ">
     <div id="logotext" class="col-sm">
         <img src="img/logo.png" width="40px" alt="">
@@ -72,25 +70,25 @@
                 </select>
                 </button>
 
-                <a href=""> 
+                <a href="index.php"> 
                     <select name="homme" id="homme-option">
                         <option value="">HOMME</option>
                     </select>
                 </a>
-                <a href="shop.html"> SHOP
+                <a href="shop.php"> SHOP
                     <select name="shop" id="shop-option">
                         <option value=""></option>
                     </select>
                 </a>
-                <a href=""> PAGES
+                <a href="#"> PAGES
                     <select name="pages" id="pages-option">
                         <option value=""></option>
                     </select>
                 </a>
-                <a href="">BLOGS</a>
-                <a href="">CONTACT</a>
+                <a href="#">BLOGS</a>
+                <a href="contact.php">CONTACT</a>
 
                 <input type="text" placeholder="Search our catalog">
                 
-         
+       
     </section>
