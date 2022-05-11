@@ -11,9 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <header> 
-   
     <nav class="first_nav">
-        
             <ul>
                 <li class="left_list">
                     <a href="">Shipping</a>
@@ -35,10 +33,8 @@
 
                 </li>
             </ul>
-       
     </nav>
 </header>
-
 <section class="first_section">
         
  <div class="row ">
@@ -59,25 +55,22 @@
         <img src="img/heart.png" width="15px" alt=""> 0
         <img src="img/shopping-bag.png" width="15px" alt="">
     </div>
-  
     </section>
     <hr>
     <section class="third_section">
-        
                 <select class="btn" name="browse" i>
                     <option value="categories">BROWSE CATEGORIES</option>
-                    
                 </select>
                 </button>
-
                 <a href="index.php"> 
-                    <select name="homme" id="homme-option">
-                        <option value="">HOMME</option>
+                    <select name="home" id="home-option">
+                        <option value="">HOME</option>
                     </select>
                 </a>
                 <a href="shop.php"> SHOP
                     <select name="shop" id="shop-option">
-                        <option value=""></option>
+                        <option value="shopPage1"></option>
+                        <option value="shopPage2"></option>
                     </select>
                 </a>
                 <a href="#"> PAGES
@@ -85,10 +78,8 @@
                         <option value=""></option>
                     </select>
                 </a>
-                <a href="#">BLOGS</a>
+                <a href="index.php">BLOGS</a>
                 <a href="contact.php">CONTACT</a>
-
                 <input type="text" placeholder="Search our catalog">
                 
-       
     </section>

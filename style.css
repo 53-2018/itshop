@@ -233,3 +233,11 @@ footer > hr
 {
     width: 70%;
 }
+
+/*comment error for contact page*/
+.comment_error{
+    color: red;
+}
+.comment_error_email{
+    color: red;
+}

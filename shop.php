@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-
 <body> 
     <div class="container"> 
-   
 <?php
 include_once 'header.php';
 ?>
-
 </div>
   <!--------SHOP SECTION------------------->
 <div class="container">
@@ -34,7 +30,7 @@ include_once 'header.php';
           </div>
           <div class="row mt-4">
             <div class="col-sm-3  mb-2">
-                <div class="card" style="width: 14rem;">
+                <div class="card" >
                     <div id="home-card" class="card-body" >
                         <h3>Categories</h3> <br>
                         <input type="checkbox"> All Conditioners <br>              
@@ -45,7 +41,6 @@ include_once 'header.php';
             </div>
           </div>
     </div>
-
     <div class="col-sm-3 mt-4 mb-4">
         <h4>HOME</h4>
         <div class="card" style="width: 13rem;">
@@ -82,7 +77,6 @@ include_once 'header.php';
           <p style="width: 13rem;">Discover our favorites  fashionable discoveries, a selection of cool items to integrate inm your wardrobe.Compose a..</p>
         
     </div>
-
     </div>
     <!--SECOND ROW-->
     <div class="row">
@@ -279,8 +273,6 @@ include_once 'header.php';
                 </div>
               </div>
         </div>
-
-
     </div>
     <!--Fourth ROW-->
     <div id="fourthrow" class="row">
@@ -350,12 +342,7 @@ include_once 'header.php';
               </div>
         </div>
     </div>
-
-
-
-    </div>
-
-<p>Proba</p>
+ </div>
 <section id="pre_futera">
    <div class="row">
        <div class="col md-2">
@@ -377,14 +364,11 @@ include_once 'header.php';
        <img src="img/logo.png" width="40px" alt=""> Games Spot
        </div>
    </div>
-
 </section>
 </div>
-
 <?php
 include_once 'footer.php';
 ?>
-
 <?php
 
 $articles=[
@@ -402,14 +386,11 @@ $articles=[
 
     ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
 ]
-
 ?>
 <script>
     let products=<?php echo json_decode($article);?>;
     debugger;
 </script>
-
-
 </body>
 
 </html>
