@@ -1,24 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Shop</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="validation.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
-<body> 
-    <div class="container"> 
+
+
+<div class="container"> 
 <?php
 include_once 'header.php';
 ?>
-</div>
+
   <!--------SHOP SECTION------------------->
 <div class="container">
-    <div class="row"> 
+    <div class="row" id="row-categories"> 
     <div class="col-sm-3 mt-4 mb-4">
         <div class="card" style="width: 14rem;">
             <div id="home-card" class="card-body" >
@@ -30,8 +19,8 @@ include_once 'header.php';
           </div>
           <div class="row mt-4">
             <div class="col-sm-3  mb-2">
-                <div class="card" >
-                    <div id="home-card" class="card-body" >
+                <div class="card" style="width: 14rem;">
+                    <div class="categories-card" >
                         <h3>Categories</h3> <br>
                         <input type="checkbox"> All Conditioners <br>              
                         <input type="checkbox"> Laptops     <br>         
@@ -44,7 +33,7 @@ include_once 'header.php';
     <div class="col-sm-3 mt-4 mb-4">
         <h4>HOME</h4>
         <div class="card" style="width: 13rem;">
-            <div id="home-card" class="card-body" >
+            <div id="home-card" class="card-body">
             
            <img id="tshirt" src="img/tshirt.jpg" alt="">
             </div>
@@ -385,10 +374,13 @@ $articles=[
     ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
 
     ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
-]
+];
+
 ?>
+
+</div>
 <script>
-    let products=<?php echo json_decode($article);?>;
+    let products=<?php echo json_decode($article);?>
     debugger;
 </script>
 </body>

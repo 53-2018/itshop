@@ -89,6 +89,9 @@ margin-right: 20px;
 .third_section{
     font-weight: 600;
 }
+#phone1{
+width: 100px;
+}
 /*fourth section*/
 
 
@@ -119,6 +122,7 @@ margin-right: 20px;
     height: 130px;
     
 }
+
 .card .tshirt a{
     text-decoration: none;
 }

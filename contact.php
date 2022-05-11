@@ -1,9 +1,10 @@
-
+<div class="container"> 
     <?php
     include_once 'header.php'
     ?>
 
 <!----------------Our Location Section--------->
+
 <div class="contactsection">
     <h2>Drop Us A Line</h2>
     <p>Have a question or comment? Use the form below to send us a message or contact us by mail</p>
@@ -39,11 +40,12 @@
 </div>
 
 </section>
+
 <br>
 <?php
 include_once 'footer.php';
 ?>
-
+</div>
 <script src="validation.js"></script>
 
 </body>

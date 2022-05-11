@@ -63,3 +63,25 @@ function checkEmail()
     xmlhttp.open("GET", "checkemail.php?email="+e);
     xmlhttp.send();
 }
+
+let n=document.getElementsByClassName("home-card");
+console.log(n);
+console.log(n[1].children[1].children[0].textContent);
+
+let articles=[];
+
+for( let i=0;i<n.length;i++)
+{ 
+    articles.push(
+    {
+        image:n[i].firstElementChild.getAttribute("src"),
+        type:n[i].children[1].children[0].textContent,
+        title: n[i].children[1].children[1].textContent,
+        price: n[i].children[1].children[3].children[0].textContent.substring(1),
+        size:"s",
+        color:"white"
+    })
+}
+
+console.log(products[5].type);
+
