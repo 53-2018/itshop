@@ -3,6 +3,7 @@
 <div class="container"> 
 <?php
 include_once 'header.php';
+require_once 'DAO.php';
 ?>
 
   <!--------SHOP SECTION------------------->
@@ -332,6 +333,8 @@ include_once 'header.php';
         </div>
     </div>
  </div>
+ </div>
+
 <section id="pre_futera">
    <div class="row">
        <div class="col md-2">
@@ -354,34 +357,41 @@ include_once 'header.php';
        </div>
    </div>
 </section>
-</div>
+
+
 <?php
 include_once 'footer.php';
 ?>
-<?php
 
-$articles=[
-    ["name"=>"laptops","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
-    ["name"=>"televisions","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
-    ["name"=>"laptops","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
-    ["name"=>"air conditioners","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
-    ["name"=>"laptops","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
-    ["name"=>"air conditioners","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
-    ["name"=>"laptops","title">="Macbook Air","price"=>"250","size">="m","color"=>"white"],
-
-    ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
-
-    ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
-
-    ["name"=>"laptops","title">="","price"=>"","size">="","color"=>""],
-];
-
-?>
-
+<div id="allProducts">
+    
 </div>
+<?php 
+$dao=new DAO();
+var_dump($dao->selectProducts());
+$articles=$dao->selectProducts();
+for ($i=0; $i <count($articles) ; $i++) {?>
+<div class="card<?=$articles[$i]['type']?>">
+<img src="img/<?=$articles[$i]['image']?>" class="home-card" alt="">
+<div>
+    <p><?=$articles[$i]['type']?></p>
+    <h4><?=$articles[$i]['name']?></h4>
+    <p><?=$articles[$i]['color']?></p>
+    <p><?=$articles[$i]['size']?></p>
+    <img src="img/heart.png<?=$articles[$i]['image']?>" class="home-card" alt="">
+    <p><span><?=$articles[$i]['price']?>$</span></p>
+ </div>
+</div>
+ 
+<?php }?>
+
 <script>
-    let products=<?php echo json_decode($article);?>
-    debugger;
+    let products=<?php echo json_encode($articles);?>;
+    for (let index = 0; index < products.length; index++) {
+        
+    document.getElementById("allProducts").innerHTML += products[index].name;
+        
+    }
 </script>
 </body>
 
