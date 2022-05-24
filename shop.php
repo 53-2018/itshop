@@ -118,7 +118,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$500</h6>
                 </div>
               </div>
         </div>
@@ -132,7 +132,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$1000</h6>
                 </div>
               </div>
         </div>
@@ -175,7 +175,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$500</h6>
                 </div>
               </div>
         </div>
@@ -189,7 +189,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$400</h6>
                 </div>
               </div>
         </div>
@@ -203,7 +203,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$7000</h6>
                 </div>
               </div>
         </div>
@@ -231,7 +231,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$6000</h6>
                 </div>
               </div>
         </div>
@@ -245,7 +245,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$1928</h6>
                 </div>
               </div>
         </div>
@@ -259,7 +259,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$1800</h6>
                 </div>
               </div>
         </div>
@@ -271,9 +271,9 @@ require_once 'DAO.php';
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <h3>Price</h3> <br>
-                    <input type="range"> <br>              
-                              
-                </div>
+                    <input id="range-slider" type="range" min="0" max="10000" value="500"> <br>              
+                           <div id="value"></div>   
+                </div> 
               </div>
               <div class="row mt-4">
                 <div class="col-sm-3  mb-2">
@@ -299,7 +299,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$8000</h6>
                 </div>
               </div>
         </div>
@@ -313,7 +313,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$8200</h6>
                 </div>
               </div>
         </div>
@@ -327,7 +327,7 @@ require_once 'DAO.php';
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6>$7500</h6>
                 </div>
               </div>
         </div>

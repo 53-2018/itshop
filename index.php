@@ -6,121 +6,120 @@
 </div>
 <br>
 <div class="container"> 
-    <section id="second_section">
-        <div>
+<section id="first">
             <div>
-               <button>MIDDWEEK DEALS</button>
-               <h3>SMARTPHONE ACCESORIES</h3>
-               <p>Up to 40% off</p>
-               <button>Shop Now ></button>
+                <div>
+                <p>MIDWEEK DEALS</p>
+                <h3>SMARTPHONES ACCESSORIES</h3>
+                <p>Up to 40% off</p>
+                <a href="shop.php"><button type="button" class="btn btn-light">Shop Now ></button></a>
+                </div>
+                <img id="huaweip50" src="img/phonep30.jpeg" alt="">
             </div>
-            <img  src="img/phonep30.jpeg" alt="" width="250px">
-        </div>
-    <div>
-        <div>
-      <p>LIMITED STOCK</p>
-      <h3>MACBOOK AIR</h3>
-      <p>starting from <span>$900.99</span></p>
-      <button>Shop Now ></button>
-    </div>
-    <img src="img/macbookair.jpeg" alt="" width="250px">
-    </div>
-<div>
-    <div>
-        <p>DISCOVER</p>
-        <h3>BEAT PRO X3</h3>
-        <p>$259.99 <span>$199.99</span></p>
-        <button>Shop Now ></button>
-    </div>
-    <img src="img/AppleAirPods.jpeg" alt=""width="250px">
-</div>
-    <!------------------------------------------->
-    <section>
-        <h4>Our Featured Offers</h4>
-        <div class="card">
-            <img src="img/phonep30.jpeg" width="250" alt="">
-           <p>TABLETS</p>
-           <h4>Samsung Galaxy M51</h4>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <p>$250.99 <span>$199.99</span></p>
-
-        </div>
-        <div class="card">
-            <img src="img/phonep30.jpeg" width="250" alt="">
-           <p>TABLETS</p>
-           <h4>Samsung Galaxy M51</h4>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <p>$250.99 <span>$199.99</span></p>
-
-        </div>
-        <div class="card">
-            <img src="img/phonep30.jpeg" width="250" alt="">
-           <p>TABLETS</p>
-           <h4>Samsung Galaxy M51</h4>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <p>$250.99 <span>$199.99</span></p>
-
-        </div>
-        <div class="card">
-            <img src="img/phonep30.jpeg" width="250" alt="">
-           <p>TABLETS</p>
-           <h4>Samsung Galaxy M51</h4>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <span class="fa fa-star"></span>
-           <p>$250.99 <span>$199.99</span></p>
-        </div>
-    </section>
-  <!----------THIRD SECTION------------------->
-    <section id="third_part">
-        <h4>This Week Deals</h4>
-        <p>307days:15hours : 33min:13sec</p>
-<h5>View All details</h5>
-<div class="two_cards">
-    <div class="card">
-        <img src="img/phonep30.jpeg" width="250" alt="">
-       <p>MOBILES</p>
-       <h4>Samsung Galaxy M51</h4>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <p>$250.99 <span>$199.99</span></p>
-
-    </div>
-    <div class="card">
-        <img src="img/macbookair.jpeg" width="250" alt="">
-       <p>TABLETS</p>
-       <h4>Lenovo ideaPad S540</h4>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <span class="fa fa-star"></span>
-       <p>$250.99 <span>$199.99</span></p>
-
-    </div>
-</div>
-
-</section>
+            <div>
+                <div>
+                <p>LIMITED STOCK</p>
+                <h3>MACBOOK AIR</h3>
+                <p>Starfing from $900.99</p>
+               <a href="shop.php" id="btnShopNow">Shop Now ></a>
+                </div>
+                <img id="huaweip50" src="img/macbookair.jpeg" class="iphone" alt="">
+            </div>
+            <div>
+                <div>
+                <p>DISCOVER</p>
+                <h3>BEAT PRO X3</h3>
+                <p>$259.99 $900.99</p>
+                <a href="shop.php" id="btnShopNow">Shop Now ></a>
+                </div>
+                <img id="huaweip50" src="img/AppleAirPods.jpeg" class="iphone" alt="">
+            </div>
+        </section>
+        <section id="second">
+            <div>
+                 <h2>Our featured Offers</h2>
+                 <p>View All ></p>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="img/phonep30.jpeg" alt="" class="card-img">
+                    <div>
+                        <p>TABLETS</p>
+                        <h4>Samsung Galaxy M51</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>$23.90 <span>$19.12</span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/macbookair.jpeg" alt="" class="card-img">
+                    <div>
+                        <p>MOBILES</p>
+                        <h4>Lenovo IdeaPad S540 13.3"</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>$23.90 <span>$28.72</span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/tvlcd.jpeg" alt="" class="card-img">
+                    <div>
+                        <p>AIR CONDITIONERS</p>
+                        <h4>TV LED LG Full HD 43 Inch 43LK5000</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>$29.00 <span>$27.55</span></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/macbookair.jpeg" alt="" class="card-img">
+                    <div>
+                        <p>AIR CONDITIONERS</p>
+                        <h4>HP Pavilion X360 Convertibile 14-Dy0064TU</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p><span>$29.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="third">
+            <div>
+                <div>
+                    <h2>This Week Deals</h2>
+                    <p>307days : 15hours : 33min : 12sec</p>
+                </div>
+                <p>View All Deals ></p>
+            </div>
+            <div>
+                <div>
+                    <img src="img/phonep30.jpeg" alt="" class="card-img">
+                    <div>
+                        <p>TABLETS</p>
+                        <h4>Samsung Galaxy M51</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>$23.90 <span>$19.12</span></p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/macbookair.jpeg" alt="" class="card-img">
+                    <div>
+                        <p>MOBILES</p>
+                        <h4>Lenovo IdeaPad S540 13.3"</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>$23.90 <span>$28.72</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 <!-------------------BEFORE FOOTER------------------------>
 <section id="before-footer">
-   <div class="row">
+   <div class="row ">
        <div class="col md-2">
         <img src="img/logo.png" width="40px" alt=""> CAMERAX
        </div>
@@ -141,6 +140,7 @@
        </div>
    </div>
 </section>
+
 </div>
 <!-------------------FOOTER----------------------->
 <?php
