@@ -213,19 +213,19 @@ require_once 'DAO.php';
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <h3>Brand</h3> <br>
-                    <input type="checkbox"> Graphic Designer <br>              
-                    <input type="checkbox"> Studio Designer    <br>         
-                           
-                           
+                    <input type="checkbox"> Samsung<br>              
+                    <input type="checkbox"> Honor   <br>         
+                    <input type="checkbox"> HP   <br>         
+                    <input type="checkbox"> Dell Computers   <br>         
+   
                 </div>
               </div>
-              
         </div>
         <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
-                    <span>TABLETS</span>    
+                    <span>PHONES</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -239,7 +239,7 @@ require_once 'DAO.php';
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
-                    <span>TABLETS</span>    
+                    <span>PHONES</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -253,7 +253,7 @@ require_once 'DAO.php';
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
-                    <span>TABLETS</span>    
+                    <span>PHONES</span>    
                     <h6>Samsung Galaxy M51</h6>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -366,6 +366,7 @@ include_once 'footer.php';
 <div id="allProducts">
     
 </div>
+    <!-- Show all products from database-->
 <?php 
 $dao=new DAO();
 var_dump($dao->selectProducts());
@@ -384,7 +385,43 @@ for ($i=0; $i <count($articles) ; $i++) {?>
 </div>
  
 <?php }?>
+    <!-- Show all brands from database-->
+    
+    <?php 
+  
+$dao=new DAO();
+var_dump($dao->selectBrands());
+$articles=$dao->selectBrands();
 
+for ($i=0; $i <count($articles) ; $i++) {?>
+<div class="card<?=$articles[$i]['name']?>">
+  
+<div>
+  
+    <h5><?=$articles[$i]['name']?></h5>
+    <img src="img/heart.png<?=$articles[$i]['image']?>" class="home-card" alt="">
+ </div>
+</div>
+ 
+<?php }?>
+ <!-- Show all brands from database-->
+    
+ <?php 
+  
+  $dao=new DAO();
+  var_dump($dao->selectManufactures());
+  $articles=$dao->selectManufactures();
+  
+  for ($i=0; $i <count($articles) ; $i++) {?>
+  <div class="card<?=$articles[$i]['manufacture_name']?>">
+    
+  <div>
+  <h5><?=$articles[$i]['manufacture_name']?></h5>
+
+   </div>
+  </div>
+   
+  <?php }?>
 <script>
     let products=<?php echo json_encode($articles);?>;
     for (let index = 0; index < products.length; index++) {
