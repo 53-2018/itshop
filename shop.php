@@ -94,21 +94,30 @@ require_once 'DAO.php';
                 </div>
               </div>
         </div>
-        <div class="col-sm-3 mt-4 mb-4">
+        <div class="col-sm-3 mt-4 mb-4">  
+      
+            <?php  
+            $dao=new DAO();
+            $products=$dao->selectProducts();
+            for($i=0;$i<count($products);$i++){?>  
+                  <div class="row mt-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/phonep30.jpeg" width="180px" height="200px">   
-                    <span>TABLETS</span>    
-                    <h6>Samsung Galaxy M51</h6>
+                    <span><?=$products[$i]['type']?></span>    
+                    <h6><?=$products[$i]['name']?></h6>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
-                    <h6>$19,12</h6>
+                    <h6><?=$products[$i]['price']?></h6> 
                 </div>
               </div>
         </div>
-        <div class="col-sm-3 mt-4 mb-4">
+              <?php }?>
+        </div>
+        
+        <!-- <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
@@ -136,7 +145,8 @@ require_once 'DAO.php';
                 </div>
               </div>
         </div>
-    </div>
+    </div>  -->
+    
     <!--THIRD ROW-->
     <div class="row">
         <div class="col-sm-3  mb-2">
@@ -165,7 +175,7 @@ require_once 'DAO.php';
               </div>
         </div>
 
-        <div class="col-sm-3 mt-4 mb-4">
+        <!-- <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/tvlcd.jpeg" alt="" width="180px" height="200px">   
@@ -206,7 +216,7 @@ require_once 'DAO.php';
                     <h6>$7000</h6>
                 </div>
               </div>
-        </div>
+        </div> -->
     <!--Fourth ROW-->
     <div class="row">
         <div class="col-sm-3  mb-2">
@@ -221,7 +231,7 @@ require_once 'DAO.php';
                 </div>
               </div>
         </div>
-        <div class="col-sm-3 mt-4 mb-4">
+        <!-- <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/macbookair.jpeg" alt="" width="180px" height="200px">   
@@ -263,7 +273,7 @@ require_once 'DAO.php';
                 </div>
               </div>
         </div>
-    </div>
+    </div> -->
     <!--Fourth ROW-->
     <div id="fourthrow" class="row">
         
@@ -289,7 +299,7 @@ require_once 'DAO.php';
                 </div>
               </div>
         </div>
-        <div class="col-sm-3 mt-4 mb-4">
+        <!-- <div class="col-sm-3 mt-4 mb-4">
             <div class="card" style="width: 14rem;">
                 <div id="home-card" class="card-body" >
                     <img src="img/phonep30.jpeg" alt="" width="180px" height="200px">   
@@ -330,7 +340,8 @@ require_once 'DAO.php';
                     <h6>$7500</h6>
                 </div>
               </div>
-        </div>
+        </div> -->
+
     </div>
  </div>
  </div>
@@ -367,43 +378,10 @@ include_once 'footer.php';
     
 </div>
     <!-- Show all products from database-->
-<?php 
-$dao=new DAO();
-var_dump($dao->selectProducts());
-$articles=$dao->selectProducts();
-for ($i=0; $i <count($articles) ; $i++) {?>
-<div class="card<?=$articles[$i]['type']?>">
-<img src="img/<?=$articles[$i]['image']?>" class="home-card" alt="">
-<div>
-    <p><?=$articles[$i]['type']?></p>
-    <h4><?=$articles[$i]['name']?></h4>
-    <p><?=$articles[$i]['color']?></p>
-    <p><?=$articles[$i]['size']?></p>
-    <img src="img/heart.png<?=$articles[$i]['image']?>" class="home-card" alt="">
-    <p><span><?=$articles[$i]['price']?>$</span></p>
- </div>
-</div>
- 
-<?php }?>
+<
     <!-- Show all brands from database-->
     
-    <?php 
   
-$dao=new DAO();
-var_dump($dao->selectBrands());
-$articles=$dao->selectBrands();
-
-for ($i=0; $i <count($articles) ; $i++) {?>
-<div class="card<?=$articles[$i]['name']?>">
-  
-<div>
-  
-    <h5><?=$articles[$i]['name']?></h5>
-    <img src="img/heart.png<?=$articles[$i]['image']?>" class="home-card" alt="">
- </div>
-</div>
- 
-<?php }?>
  <!-- Show all brands from database-->
     
  <?php 
