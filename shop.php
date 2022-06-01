@@ -3,7 +3,7 @@
 <div class="container"> 
 <?php
 include_once 'header.php';
-require_once 'DAO.php';
+require_once './config/DAO.php';
 ?>
 
   <!--------SHOP SECTION------------------->

@@ -9,7 +9,8 @@ class DAO {
 	private $SELECT_PRODUCTS_BY_ID = "SELECT * FROM products";
 	private $SELECT_BRANDS="SELECT * FROM brands";
 	private $SELECT_MANUFACTURERS="SELECT * FROM manufactures";
-	
+	private $SELECT_ORDERS="SELECT * FROM orders";
+	private $SELECT_ORDERS_DETAILS="SELECT * FROM ordersdetails";
 	
 	public function __construct()
 	{
@@ -42,6 +43,28 @@ class DAO {
 	{
 		
 		$statement = $this->db->prepare($this->SELECT_MANUFACTURERS);
+		
+		$statement->execute();
+		
+		$result = $statement->fetchAll();
+		//var_dump($result);
+		return $result;
+	}
+	public function selectOrders()
+	{
+		
+		$statement = $this->db->prepare($this->SELECT_ORDERS);
+		
+		$statement->execute();
+		
+		$result = $statement->fetchAll();
+		//var_dump($result);
+		return $result;
+	}
+	public function selectOrdersDetails()
+	{
+		
+		$statement = $this->db->prepare($this->SELECT_ORDERS_DETAILS);
 		
 		$statement->execute();
 		

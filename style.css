@@ -401,3 +401,7 @@ footer > hr
 .comment_error_email{
     color: red;
 }
+/*order table*/
+#order-table{
+    border: 1px solid black;
+}
