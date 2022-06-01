@@ -10,9 +10,9 @@
       <table class="table table-striped">
 <tr>
                     <th>ID</th>
-                    <th>CUSTOMER</th>
-                    <th>ADRESS</th>
-                    <th>DATE</th>
+                    <th>Customer</th>
+                    <th>Adress</th>
+                    <th>Date</th>
                     <th>ORDER STATUS</th>
                     <th>ORDER ID</th>
                     <th>MAIN ORDER</th>
