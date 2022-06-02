@@ -4,15 +4,15 @@ class DB{
 
     public static function createInstance($config = null)
     {
-       // $settings['dbname'] = 'itshop';
-        //$settings['dbhost'] = 'localhost';
-       // $settings['dbuser'] = 'root';
-        //$settings['dbpass'] = 'root';
+       $settings['dbname'] = 'it-shop';
+        $settings['dbhost'] = 'localhost';
+       $settings['dbuser'] = 'root';
+        $settings['dbpass'] = 'root';
 
-        $settings['dbname'] = 'itshop';
-        $settings['dbhost'] = '127.0.0.1';
-        $settings['dbuser'] = 'root';
-        $settings['dbpass'] = '';
+        //$settings['dbname'] = 'it-shop';
+        //$settings['dbhost'] = '127.0.0.1';
+        //$settings['dbuser'] = 'root';
+       // $settings['dbpass'] = '';
 
         try{
             $dsn = 'mysql:dbname=' . $settings['dbname'] . ';host=' . $settings['dbhost'];

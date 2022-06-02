@@ -9,11 +9,13 @@
 <div class="order-section mt-3">
       <table class="table table-striped">
 <tr>
-                    <th>ORDER ID</th>
-                    <th>TYPE</th>
-                    <th>ADRESS</th>
-                    <th>DATE</th>
-                    <th>ORDER DETAILS</th>
+                    <th>Order id</th>
+                    <th>Type</th>
+                    <th>Addres</th>
+                    <th>Date</th>
+                    <th>Order Details</th>
+                    <th>Change order</th>
+                    <th>Delete order</th>
                 </tr>
 <?php  
             $dao=new DAO();
@@ -25,6 +27,8 @@
                     <td><?=$orders[$i]['adress']?></td>
                     <td><?=$orders[$i]['date']?></td>
                     <td><a href="orders-details.php">Order Details</a></td>
+                    <td><a href="order-controller.php">Change</a></td>
+                    <td> <a href=""> <button type="submit" name="action" class="btn btn-primary" value="Delete">DELETE</button></a></td>
                   </tr>  
                 
                    

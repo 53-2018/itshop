@@ -19,6 +19,7 @@
                     <a href="">FAQ</a>
                     <a href="contact.php">Contact</a>
                     <a href="orders.php">Track Order</a>
+                    <a href="order-entry.php">Order Entry</a>
                 </li>
                 
                 <li class="right_nav">
