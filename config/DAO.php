@@ -14,6 +14,9 @@ class DAO {
 	private $INSERT_ORDER = "INSERT INTO orders (type, adress, date) VALUES (?,?,?)";
 	private $DELETE_ORDER = "DELETE  FROM orders WHERE order_id = ?";
 
+	private $INSERT_USER_ATRIBUTES = "INSERT into users (email, password) values (?,?) ";
+	private $SELECT_USER_BY_USERNAME_AND_PASSWORD = "SELECT * FROM users  where email = ? and password=?";
+
 	
 	public function __construct()
 	{
@@ -93,6 +96,19 @@ class DAO {
 		
 		$statement->execute();
 	}
+	public function selectUserByEmailAndPassword($email, $password)
+	{
+		
+		$statement = $this->db->prepare($this->SELECT_USER_BY_USERNAME_AND_PASSWORD);
+		$statement->bindValue(1, $email);
+		$statement->bindValue(2, $password);
+		
+		$statement->execute();
+		
+		$result = $statement->fetch();
+		return $result;
+	}
+	
 	
 	
 }
