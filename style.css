@@ -405,5 +405,106 @@ footer > hr
 #order-table{
     border: 1px solid black;
 }
-/*login form*/
+/*SHOP PAGE*/
+/*Section id=shop-container*/
+#shop-container
+{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-gap: 20px;
+}
+/*section id=filter-section*/
+#filter-section > div
+{
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid #b3b3b3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#filter-section > div > a
+{
+    text-decoration: none;
+    color: black;
+}
+#filter-section > div > a:hover
+{
+    color: red;
+}
+
+#price-from
+{
+    width: 40px;
+}
+#price-to
+{
+    width: 40px;
+}
+
+/*section id=article-groups*/
+#article-groups
+{
+    display: flex;
+    justify-content:space-between;
+}
+#article-groups img
+{
+    width: 150px;
+}
+#article-groups > div
+{
+    text-align:  center;
+    padding: 5px;
+    margin: 10px;
+}
+#article-groups > div > div
+{
+    width: auto;
+    min-width: 170px;
+    background-color: white;
+    border-radius: 3px;
+}
+#article-groups > div > p
+{
+    opacity: 70%;
+}
+
+/*section id=article-cards*/
+#article-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shop-card
+{
+    height: 400px;
+    background-color: white;
+    padding-top: 20px;
+    border-radius: 5px;
+    width: 250px;
+    margin: 15px auto;
+}
+.shop-card > img
+{
+    display: flex;
+    justify-content: center;
+    height: 180px;
+}
+.shop-card > div
+{
+    padding: 30px ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.shop-card > div p
+{
+    margin: 0;
+}
+.shop-card > div > h4
+{
+    margin-top: 0;
+}
+
+
+
 
