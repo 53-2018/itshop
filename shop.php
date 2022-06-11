@@ -1,6 +1,7 @@
 
 
 <div class="container"> 
+    <link rel="stylesheet" href="style.css">
 <?php
 include_once 'header.php';
 require_once './config/DAO.php';
@@ -19,7 +20,8 @@ require_once './config/DAO.php';
             <section id="filter-section">
                 <div>
                     <h3>Home</h3>
-                    <a href="" onclick="showAllProduct()">Show all products</a><br>
+                 
+                    <button type="button" class="btn btn-danger"  onclick="showAllProduct()" >Show All Products</button>
                </div>
 
                 <div>
@@ -56,7 +58,8 @@ require_once './config/DAO.php';
                     <input type="text" id="price-from" readonly>
                     <p>to:</p>
                     <input type="text" id="price-to" readonly>
-                    <input type="button" value="Show by price" onclick="showByPrice()">
+                  
+                    <button type="button" class="btn btn-danger" value="Apply price" onclick="showByPrice()" >Apply price</button>
                 </div>
             </section>
 
@@ -64,7 +67,7 @@ require_once './config/DAO.php';
                 <section id="article-groups">
                     <div>
                         <div>
-                            <img src="img/tvlcd.jpeg">
+                            <img src="img/macbookair.jpeg">
                         </div>
                         <h4>Laptops</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi, suscipit culpa rem laudantium aliquam quia omnis ab! Cumque, totam.</p>
@@ -80,7 +83,7 @@ require_once './config/DAO.php';
 
                     <div>
                         <div>
-                        <img src="img/tvlcd.jpeg">
+                        <img src="img/air-conditioner-1.jpeg">
                         </div>
                         <h4>Air Conditioners</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nisi, suscipit culpa rem laudantium aliquam quia omnis ab! Cumque, totam.</p>
@@ -129,9 +132,9 @@ include_once 'footer.php';
         let products=<?php echo json_encode($products)?>;
         let manufacturers=<?php echo json_encode($manufacturers)?>;
       
+
     </script>
-<script src="filter.js">
-    </script>
+        <script src="filter.js"></script>
 
 </body>
 

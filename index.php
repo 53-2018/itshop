@@ -115,37 +115,34 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
+        </section>    
 <!-------------------BEFORE FOOTER------------------------>
 <section id="before-footer">
-   <div class="row ">
+   <div class="row mb-4 ">
        <div class="col md-2">
-        <img src="img/logo.png" width="40px" alt=""> CAMERAX
+        <img src="img/camerax-logo.png" width="60px" alt=""> CAMERAX
        </div>
        <div class="col md-2">
-       <img src="img/logo.png" width="40px" alt=""> COMPUTERUP
+       <img src="img/camerax-logo.png" width="60px" alt="">  COMPUTERUP
        </div>
        <div class="col md-2">
-       <img src="img/logo.png" width="40px" alt=""> DIGITLSTORE
+       <img src="img/camerax-logo.png" width="60px" alt=""> DIGITLSTORE
        </div>
        <div class="col md-2">
-       <img src="img/logo.png" width="40px" alt=""> DIGITECH
+       <img src="img/camerax-logo.png" width="60px" alt=""> DIGITECH
        </div>
        <div class="col md-2">
-       <img src="img/logo.png" width="40px" alt=""> ELECTRONICS
+       <img src="img/camerax-logo.png" width="60px" alt=""> ELECTRONICS
        </div>
        <div class="col md-2">
-       <img src="img/logo.png" width="40px" alt=""> Games Spot
+       <img src="img/camerax-logo.png" width="60px" alt=""> Games Spot
        </div>
    </div>
 </section>
-
 </div>
 <!-------------------FOOTER----------------------->
 <?php
 include_once 'footer.php';
 ?>
 </body>
-
 </html>

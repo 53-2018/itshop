@@ -50,14 +50,14 @@ function displayProducts(checked, type)
             document.getElementById('article-cards').innerHTML +=
             `
             <div class="shop-card ${products[i].name_type}">
-                <img src="../image/${products[i].image}" alt="slikaa" class="card-img">
+                <img src="image/${products[i].image}" alt="slikaa" class="card-img">
                 <div>
-                    <p style="color:red">${products[i].name_type}</p>
+                    <p style="color:crimson">${products[i].name_type}</p>
                     <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
                     <p>${products[i].name}</p>
-                    <img src="../image/rating.png" class="rating-img">
-                    <p><span>${products[i].price}$</span></p>
-                    <a href='../functionality/controller.php?action=addToOrder&id_product=${products[i].id}&price=${products[i].price}'> Add to orders </a>
+                    <img src="image/rating.png" alt="" class="rating-img">
+                                        <p><span>${products[i].price}$</span></p>
+                    <a href='../functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
                 </div>
             </div>
             `;
@@ -73,12 +73,11 @@ function showAllProduct()
         document.getElementById('article-cards').innerHTML +=
         `
         <div class="shop-card ${products[i].name_type}">
-            <img src="../image/${products[i].image}" class="card-img">
+            <img src="image/${products[i].image}" class="card-img">
             <div>
-                <p style="color:red">${products[i].name_type}</p>
+                <p style="color:crimson">${products[i].name_type}</p>
                 <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
-                <p>${products[i].name}</p>
-                <img src="../image/rating.png" class="rating-img">
+                <img src="image/rating.png" alt="" class="rating-img">
                 <p><span>${products[i].price}$</span></p>
                 <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
             </div>
@@ -113,12 +112,12 @@ function showByCategories(category)
                 document.getElementById('article-cards').innerHTML +=
                 `
                 <div class="shop-card ${products[i].name_type}">
-                    <img src="../image/${products[i].image}" alt="" class="card-img">
+                    <img src="image/${products[i].image}" alt="" class="card-img">
                     <div>
-                        <p style="color:red">${products[i].name_type}</p>
+                        <p style="color:crimson">${products[i].name_type}</p>
                         <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
                         <p>${products[i].name}</p>
-                        <img src="../image/rating.png" alt="" class="rating-img">
+                        <img src="image/rating.png" alt="" class="rating-img">
                         <p><span>${products[i].price}$</span></p>
                         <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
                     </div>
@@ -149,12 +148,12 @@ function showByPrice()
             document.getElementById('article-cards').innerHTML +=
             `
             <div class="shop-card ${products[i].name_type}">
-                <img src="../image/${products[i].image}" alt="" class="card-img">
+                <img src="image/${products[i].image}" alt="" class="card-img">
                 <div>
-                    <p style="color:red">${products[i].name_type}</p>
+                    <p style="color:crimson">${products[i].name_type}</p>
                     <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
                     <p>${products[i].name}</p>
-                    <img src="../image/rating.png" alt="" class="rating-img">
+                    <img src="image/rating.png" alt="" class="rating-img">
                     <p><span>${products[i].price}$</span></p>
                     <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
                 </div>
@@ -179,20 +178,20 @@ function showSearched()
             document.getElementById('article-cards').innerHTML +=
             `
             <div class="shop-card ${products[i].name_type}">
-                <img src="../image/${products[i].image}" alt="" class="card-img">
+                <img src="image/${products[i].image}" alt="" class="card-img">
                 <div>
-                    <p style="color:red">${products[i].name_type}</p>
+                    <p style="color:crimson">${products[i].name_type}</p>
                     <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
                     <p>${products[i].name}</p>
-                    <img src="../image/rating.png" alt="" class="rating-img">
+                    <img src="image/rating.png" alt="" class="rating-img">
                     <p><span>${products[i].price}$</span></p>
                     <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
                 </div>
             </div>
-            `;
+            ` ;
         }
     }
     if(tmp==0)
-    document.getElementById('article-cards').innerHTML +="Nemaa artikala za zadatu pretragu!";
+    document.getElementById('article-cards').innerHTML +="Nema artikala za zadatu pretragu!";
 
 }

@@ -7,7 +7,7 @@ function check(){
     debugger;
     if (x == null || x == "") {
       document.getElementsByClassName('comment_error').innerHTML = "Message box must be filled";
-    return false
+    return false;
     }
 
 /* validation email */

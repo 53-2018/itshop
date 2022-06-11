@@ -4,9 +4,7 @@
     include_once 'header.php';
     require_once './config/DAO.php';
     ?>
-
 <!----------------Our Location Section--------->
-
   <div class="form">
     <form class="register-form">
       <input type="text" placeholder="name"/>
@@ -26,17 +24,10 @@
   </div>
 </div>
 
-
-
-
-
-
 <br>
 <?php
 include_once 'footer.php';
 ?>
-
-<script src="login.js"></script>
 
 </body>
 

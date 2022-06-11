@@ -298,8 +298,9 @@ width: 100px;
 /*FOOTER*/
 footer
 {
-    background-color: #f2f2f2;
+    background-color: #f2f0f0;
 }
+
 /*section search*/
 #search
 {
@@ -396,7 +397,7 @@ footer > hr
 
 /*comment error for contact page*/
 .comment_error{
-    color: red;
+    color: red
 }
 .comment_error_email{
     color: red;
@@ -435,11 +436,11 @@ footer > hr
 
 #price-from
 {
-    width: 40px;
+    width: 45px;
 }
 #price-to
 {
-    width: 40px;
+    width: 45px;
 }
 
 /*section id=article-groups*/

@@ -9,26 +9,26 @@
 <div class="order-section mt-3">
       <table class="table table-striped">
 <tr>
-                    <th>ID</th>
-                    <th>Customer</th>
-                    <th>Adress</th>
+                    <th>Order id</th>
+                    <th>Type</th>
+                    <th>Addres</th>
                     <th>Date</th>
-                    <th>ORDER STATUS</th>
-                    <th>ORDER ID</th>
-                    <th>MAIN ORDER</th>
+                    <th>Order Details</th>
+                    <th>Change order</th>
+                    <th>Delete order</th>
                 </tr>
 <?php  
             $dao=new DAO();
-            $orders=$dao->selectOrdersDetails();
+            $orders=$dao->selectOrders();
             for($i=0;$i<count($orders);$i++){?>  
                  <tr>
-                    <td><?=$orders[$i]['od_id']?></td>  
-                    <td><?=$orders[$i]['customer']?></td>
+                    <td><?=$orders[$i]['order_id']?></td>  
+                    <td><?=$orders[$i]['type']?></td>
                     <td><?=$orders[$i]['adress']?></td>
                     <td><?=$orders[$i]['date']?></td>
-                    <td><?=$orders[$i]['order_status']?></td>
-                    <td><?=$orders[$i]['order_id']?></td>
-                    <td><a href="orders.php">Order</a></td>
+                    <td><a href="orders-details.php">Order Details</a></td>
+                    <td><a href="order-controller.php">Change</a></td>
+                    <td> <a href=""> <button type="submit" name="action" class="btn btn-primary" value="Delete">DELETE</button></a></td>
                   </tr>  
                 
                    
@@ -38,8 +38,6 @@
   </table>
 
 </div>
-
-</section>
 
 <br>
 <?php

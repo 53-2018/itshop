@@ -12,7 +12,11 @@ class DAO {
 	private $INSERT_USER_TYPES="INSERT into user_types(name) VALUES(?)";
 	private $INSERT_USERS="INSERT into user(name, surname, email, username, password, id_user_types) VALUES(?,?,?,?,?)";
 	private $SELECT_USERS="SELECT * FROM users";
-	private $INSERT_ORDER="INSERT into orders(address,country,order_price,id_product,id_user) VALUES(?,?,?,?,?)";
+
+	private $SELECT_ORDERS="SELECT * FROM orders";
+	private $SELECT_ORDERS_DETAILS="SELECT * FROM ordersdetails";
+	private $INSERT_ORDER = "INSERT INTO orders (type, adress, date) VALUES (?,?,?)";
+	private $DELETE_ORDER = "DELETE  FROM orders WHERE order_id = ?";
 
 	public function __construct()
 	{
@@ -86,6 +90,28 @@ class DAO {
 		
 		$statement->execute();
 	}
+	public function selectOrders()
+	{
+		
+		$statement = $this->db->prepare($this->SELECT_ORDERS);
+		
+		$statement->execute();
+		
+		$result = $statement->fetchAll();
+		//var_dump($result);
+		return $result;
+	}
+	public function insertOrder($type, $adress, $date)
+	{
+		
+		$statement = $this->db->prepare($this->INSERT_ORDER);
+		$statement->bindValue(1, $type);
+		$statement->bindValue(2, $adress);
+		$statement->bindValue(3, $date);
+	
+		
+		$statement->execute();
+	}
 	public function insertUserWithType($name, $surname, $email,$username, $password)
 	{
 		$id_user_type= $this->insertUserType($name);
@@ -101,17 +127,18 @@ class DAO {
 		$result = $statement->fetchAll();
 		return $result;
 	}
-	public function insertOrder($address,$country,$order_price,$id_product,$id_user)
+	
+	public function selectUserByEmailAndPassword($email, $password)
 	{
 		
-		$statement = $this->db->prepare($this->INSERT_ORDER);
-		$statement->bindValue(1, $address);
-		$statement->bindValue(2, $country);
-		$statement->bindValue(3, $order_price);
-		$statement->bindValue(4, $id_product);
-		$statement->bindValue(5, $id_user);
+		$statement = $this->db->prepare($this->SELECT_USERS);
+		$statement->bindValue(1, $email);
+		$statement->bindValue(2, $password);
 		
 		$statement->execute();
+		
+		$result = $statement->fetch();
+		return $result;
 	}
 }
 ?>

@@ -1,3 +1,4 @@
+
 <section id="search">
             <div>
                 <img src="" class="icons" alt="">
@@ -21,7 +22,7 @@
             <div>
                 <h5>COMPANY</h5>
                 <a href="">About Us</a> <br>
-                <a href="">Contacts</a> <br>
+                <a href="contact.php">Contacts</a> <br>
                 <a href="">Blog</a> <br>
                 <a href="">Careers</a> <br>
                 <a href="">Affiliates</a> <br>
@@ -29,7 +30,7 @@
             <div>
                 <h5>SHOP</h5>
                 <a href="">About Us</a> <br>
-                <a href="">Contacts</a> <br>
+                <a href="contact.php">Contacts</a> <br>
                 <a href="">Blog</a> <br>
                 <a href="">Careers</a> <br>
                 <a href="">Affiliates</a> <br>
@@ -37,7 +38,7 @@
             <div>
                 <h5>HELP</h5>
                 <a href="">About Us</a> <br>
-                <a href="">Contacts</a> <br>
+                <a href="contact.php">Contacts</a> <br>
                 <a href="">Blog</a> <br>
                 <a href="">Careers</a> <br>
                 <a href="">Affiliates</a> <br>
@@ -45,7 +46,7 @@
             <div>
                 <h5>MY ACCOUNT</h5>
                 <a href="">About Us</a> <br>
-                <a href="">Contacts</a> <br>
+                <a href="contact.php">Contacts</a> <br>
                 <a href="">Blog</a> <br>
                 <a href="">Careers</a> <br>
                 <a href="">Affiliates</a> <br>
@@ -53,10 +54,10 @@
             <div>
                 <h5>CONTACT INFO</h5>
                 <p>
-                    (+381) 69854-287 <br>
-                    Mon to Sun: 10AM to 6PM <br>
+                    (+381) 354-554 <br>
+                    Mon to Sun: 09AM to 17PM <br>
                     demo@demo.com <br>
-                    Kralja Petra 100, Cacak <br>
+                    Svetog Save 66, Cacak <br>
                 </p>
             </div>
         </section>
@@ -92,4 +93,4 @@
             </div>
         </section>
         <hr>
-        <p>Copyright 2022 Technology. All rights reserved</p>
+        <p class="text-center">Copyright 2022 Technology. All rights reserved</p>
