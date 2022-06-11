@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2022 at 03:57 PM
+-- Generation Time: Jun 11, 2022 at 09:31 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `itshop`
+-- Database: `itshop-1`
 --
 
 -- --------------------------------------------------------
@@ -77,30 +77,18 @@ INSERT INTO `manufacturers` (`id_manufacturer`, `name_manufacturer`) VALUES
 --
 
 CREATE TABLE `orders` (
-  `id_orders` int(11) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `country` varchar(255) NOT NULL,
-  `order_time` datetime NOT NULL DEFAULT current_timestamp(),
-  `order_price` varchar(255) NOT NULL,
-  `id_product` int(11) NOT NULL,
-  `id_user` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `order_id` int(11) NOT NULL,
+  `order_name` varchar(50) NOT NULL,
+  `adress` varchar(50) NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id_orders`, `address`, `country`, `order_time`, `order_price`, `id_product`, `id_user`) VALUES
-(2, 'Gradsko šetalište bb', 'Serbia', '2022-06-09 15:51:50', '560', 4, 2),
-(3, 'Gradsko šetalište bb', 'Serbia', '2022-06-09 15:52:39', '560', 4, 2),
-(4, 'Gradsko šetalište bb', 'Serbia', '2022-06-09 15:53:37', '560', 4, 2),
-(5, 'Gradsko šetalište bb', 'Serbia', '2022-06-09 15:53:51', '560', 4, 2),
-(6, '', '', '2022-06-09 15:54:18', '560', 4, 2),
-(7, '', '', '2022-06-09 15:54:22', '560', 4, 2),
-(8, 'Milinka Kušića 11', 'Serbia', '2022-06-09 15:55:05', '560', 4, 3),
-(9, 'Bulevar oslobodilaca Čačka', 'Serbia', '2022-06-09 15:55:29', '560', 4, 3),
-(10, 'Bulevar oslobodilaca Čačka', 'Serbia', '2022-06-09 15:56:50', '560', 1, 3),
-(11, 'Savska promenada 98', 'Serbia', '2022-06-09 15:57:13', '560', 5, 3);
+INSERT INTO `orders` (`order_id`, `order_name`, `adress`, `date`) VALUES
+(1, 'Apple, Iphone 11 Grey', 'Nikole Pasica 33, Uzice', '2022-06-15');
 
 -- --------------------------------------------------------
 
@@ -173,9 +161,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `name`, `surname`, `email`, `username`, `password`, `id_user_type`) VALUES
-(1, 'Milan', 'Marković', 'milan@gmial.com', 'milan', 'milan123', 1),
-(2, 'Jovana', 'Katić', 'joca@gmail.com', 'jovana', 'jovana123', 1),
-(3, 'a', 'a', 'a', 'a', 'a', 1);
+(1, 'Marko', 'Markovivc', 'marko@gmail.com', 'marko', '123', 3);
 
 -- --------------------------------------------------------
 
@@ -218,9 +204,7 @@ ALTER TABLE `manufacturers`
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id_orders`),
-  ADD KEY `id_product` (`id_product`),
-  ADD KEY `id_user` (`id_user`);
+  ADD PRIMARY KEY (`order_id`);
 
 --
 -- Indexes for table `products`
@@ -269,7 +253,7 @@ ALTER TABLE `manufacturers`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id_orders` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -304,13 +288,6 @@ ALTER TABLE `user_types`
 --
 ALTER TABLE `brands`
   ADD CONSTRAINT `brands_ibfk_1` FOREIGN KEY (`id_manufacturer`) REFERENCES `manufacturers` (`id_manufacturer`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `orders`
---
-ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `orders_ibfk_2` FOREIGN KEY (`id_product`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `products`

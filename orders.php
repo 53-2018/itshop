@@ -10,7 +10,7 @@
       <table class="table table-striped">
 <tr>
                     <th>Order id</th>
-                    <th>Type</th>
+                    <th>Order Name</th>
                     <th>Addres</th>
                     <th>Date</th>
                     <th>Order Details</th>
@@ -23,7 +23,7 @@
             for($i=0;$i<count($orders);$i++){?>  
                  <tr>
                     <td><?=$orders[$i]['order_id']?></td>  
-                    <td><?=$orders[$i]['type']?></td>
+                    <td><?=$orders[$i]['order_name']?></td>
                     <td><?=$orders[$i]['adress']?></td>
                     <td><?=$orders[$i]['date']?></td>
                     <td><a href="orders-details.php">Order Details</a></td>

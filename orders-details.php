@@ -10,7 +10,7 @@
       <table class="table table-striped">
 <tr>
                     <th>Order id</th>
-                    <th>Type</th>
+                    <th>Order Type</th>
                     <th>Addres</th>
                     <th>Date</th>
                     <th>Order Details</th>
