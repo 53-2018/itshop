@@ -6,8 +6,8 @@ function check(){
     var x = document.getElementById('comment_box').value
     debugger;
     if (x == null || x == "") {
-      document.getElementsByClassName('comment_error').innerHTML = "Message box must be filled";
-    return false;
+      document.getElementById('comment_error').innerHTML = "Message box must be filled";
+    return false
     }
 
 /* validation email */
@@ -24,7 +24,10 @@ if(!r.test(b)){
     return false;
     
 }
+ 
 }
+
+
 /* filters for Shop Page*/
 
 let articles1=[
@@ -63,6 +66,8 @@ function checkEmail()
     xmlhttp.open("GET", "checkemail.php?email="+e);
     xmlhttp.send();
 }
+
+
 
 let n=document.getElementsByClassName("home-card");
 console.log(n);

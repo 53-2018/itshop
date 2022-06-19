@@ -1,4 +1,4 @@
-
+<div class="container"> 
 <section id="search">
             <div>
                 <img src="" class="icons" alt="">
@@ -94,3 +94,4 @@
         </section>
         <hr>
         <p class="text-center">Copyright 2022 Technology. All rights reserved</p>
+        </div>
