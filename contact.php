@@ -37,12 +37,12 @@
     <label for="floatingTextarea2">How can we help?</label>
   </div>
 
-  <div class="dugme mt-4">
+  <div class="btn-post-comment mt-4">
 
     <p style="color: red;" id="comment_error"></p>
     <p style="color: red;" id="comment_error_email"></p>
 
-    <input class="btncolor" type="submit" name="commit" value="Post Comment"onclick="return check()">
+    <input id="btn-post-comment" class="btn btn-danger" type="submit" name="commit" value="Post Comment"onclick="return check()" >
 
   </div>
     </form>

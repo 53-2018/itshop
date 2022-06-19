@@ -5,7 +5,7 @@
 function check(){
     var x = document.getElementById('comment_box').value
     debugger;
-    if (x == null || x == "") {
+    if (x == null || x == "" ) {
       document.getElementById('comment_error').innerHTML = "Message box must be filled";
     return false
     }

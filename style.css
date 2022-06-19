@@ -256,15 +256,10 @@ width: 100px;
 .contactsection{
     margin-top: 50px;
 }
-#btn{
-    background-color: rgb(204, 35, 100);
-    margin-left: 85%;
-    padding: 8px;
-    color: white;
+.btn-post-comment{
+    text-align: right;
 }
-.btncolor{
-    background-color: rgb(204, 35, 100);
-}
+
 
 /*SHOP PAGE*/
 
