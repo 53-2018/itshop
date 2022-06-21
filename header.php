@@ -56,11 +56,11 @@
     </div>
     <divi id="icons" class="col-sm">
     <p>
-                Welcome
+                 Welcome
                 <strong>
                     <?php
                     if (isset($_SESSION['email'])) { 
-                  
+                 
                      echo $_SESSION['email']['username']; 
                     }
                      ?>
@@ -99,6 +99,7 @@
                 </a>
                 <a href="index.php">BLOGS</a>
                 <a href="contact.php">CONTACT</a>
-                <input type="text" placeholder="Search our catalog">
+                <input type="text" onkeyup="showSearched()" placeholder="Search our catalog" id="search-bar" name="search">
+                <button type="submit"> <img src="image/search-interface-symbol.png" height="14px" width="14px"> </button>
                 
     </section>
