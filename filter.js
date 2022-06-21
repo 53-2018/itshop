@@ -193,5 +193,4 @@ function showSearched()
     }
     if(tmp==0)
     document.getElementById('article-cards').innerHTML +="Nema artikala za zadatu pretragu!";
-
 }
