@@ -14,17 +14,19 @@
       $adress=isset($_POST["adress"])? test_input($_POST["adress"]):"";
       $date=isset($_POST["date"])? test_input($_POST["date"]):"";
       $dao=new DAO();
-      $dao->insertOrder($type,$adress,$date);
-      include 'orders.php';
+      $dao->insertOrder($adress,$type,$date);
+      include_once 'orders.php';
    }
-   elseif($action=='Delete'){
-      $order_id=isset($_POST["type"])? test_input($_POST["type"]):"";
+   elseif($action=='Update'){
+      $order_id=isset($_POST["order_id"])? test_input($_POST["order_id"]):"";
       $dao=new DAO();
       $dao->deleteOrder($order_id);
-      include 'orders.php';
+      include_once 'orders.php';
+     
    }
 
 }  
+
 else{
    header("Location:index.php");
 }

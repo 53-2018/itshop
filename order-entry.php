@@ -21,7 +21,7 @@
   </div>
   <div class="col-6">
     <label  class="form-label">Customer Adress</label>
-    <input type="text" class="form-control"  name="adress" >
+    <input type="text" class="form-control"  name="address" >
   </div>
   
   <div class="col-md-6">
