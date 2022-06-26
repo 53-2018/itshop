@@ -15,7 +15,7 @@ class DAO {
 
 	private $SELECT_ORDERS="SELECT * FROM orders";
 	private $SELECT_ORDERS_DETAILS="SELECT * FROM ordersdetails";
-	private $INSERT_ORDER="INSERT into orders(adress,order_name,date) VALUES(?,?,?)";
+	private $INSERT_ORDER="INSERT into orders(address,order_name,date) VALUES(?,?,?)";
 	private $DELETE_ORDER = "DELETE  FROM orders WHERE order_id = ?";
 
 	public function __construct()
@@ -101,11 +101,11 @@ class DAO {
 		//var_dump($result);
 		return $result;
 	}
-	public function insertOrder($adress,$order_name,$date)
+	public function insertOrder($address,$order_name,$date)
 	{
 		
 		$statement = $this->db->prepare($this->INSERT_ORDER);
-		$statement->bindValue(1, $adress);
+		$statement->bindValue(1, $address);
 		$statement->bindValue(2, $order_name);
 		$statement->bindValue(3, $date);
 	

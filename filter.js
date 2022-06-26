@@ -56,10 +56,8 @@ function displayProducts(checked, type)
                     <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
                     <p>${products[i].name}</p>
                     <img src="image/rating.png" alt="" class="rating-img">
-                                        <p><span>${products[i].price}$</span></p>
-                    <a href='../functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
-                </div>
-            </div>
+                    <p><span>${products[i].price}$</span></p>
+                    <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
             `;
         }
     }
@@ -79,8 +77,8 @@ function showAllProduct()
                 <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
                 <img src="image/rating.png" alt="" class="rating-img">
                 <p><span>${products[i].price}$</span></p>
-                <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
-            </div>
+                <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
+                </div>
         </div>
         `;
     }
@@ -119,8 +117,8 @@ function showByCategories(category)
                         <p>${products[i].name}</p>
                         <img src="image/rating.png" alt="" class="rating-img">
                         <p><span>${products[i].price}$</span></p>
-                        <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
-                    </div>
+                        <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
+                        </div>
                 </div>
                 `;
             }
@@ -155,8 +153,8 @@ function showByPrice()
                     <p>${products[i].name}</p>
                     <img src="image/rating.png" alt="" class="rating-img">
                     <p><span>${products[i].price}$</span></p>
-                    <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
-                </div>
+                    <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
+                    </div>
             </div>
             `;
         }
@@ -185,8 +183,8 @@ function showSearched()
                     <p>${products[i].name}</p>
                     <img src="image/rating.png" alt="" class="rating-img">
                     <p><span>${products[i].price}$</span></p>
-                    <a href='../functionality/functionality/controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>
-                </div>
+                    <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
+                    </div>
             </div>
             ` ;
         }

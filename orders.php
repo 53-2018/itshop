@@ -24,7 +24,7 @@
                  <tr>
                     <td><?=$orders[$i]['order_id']?></td>  
                     <td><?=$orders[$i]['order_name']?></td>
-                    <td><?=$orders[$i]['adress']?></td>
+                    <td><?=$orders[$i]['address']?></td>
                  <td><?=$orders[$i]['date']?></td>
                       <!-- <td><a href="orders-details.php">Order Details</a></td>
                     <td><a href="order-controller.php">Change</a></td>

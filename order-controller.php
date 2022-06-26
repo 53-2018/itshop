@@ -11,7 +11,7 @@
    if($action=='Send'){
        
       $type=isset($_POST["type"])? test_input($_POST["type"]):"";
-      $adress=isset($_POST["adress"])? test_input($_POST["adress"]):"";
+      $adress=isset($_POST["address"])? test_input($_POST["address"]):"";
       $date=isset($_POST["date"])? test_input($_POST["date"]):"";
       $dao=new DAO();
       $dao->insertOrder($adress,$type,$date);

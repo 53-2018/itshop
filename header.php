@@ -56,15 +56,15 @@
     </div>
     <divi id="icons" class="col-sm">
     <p>
-                 Welcome
-                <strong>
+                
+                <p>
                     <?php
                     if (isset($_SESSION['email'])) { 
-                 
+                 echo 'Welcome '; 
                      echo $_SESSION['email']['username']; 
                     }
                      ?>
-                </strong>
+    </p>
             </p>
         <a href="login.php">LOGIN</a>
         <strong>
@@ -72,7 +72,7 @@
         </strong>
         <img src="img/user.png" width="15px" alt="">0
         <img src="img/heart.png" width="15px" alt=""> 0
-        <img src="img/shopping-bag.png" width="15px" alt="">
+       <a href="cart.php">  <img src="img/shopping-bag.png" width="15px" alt=""></a>
     </div>
     </section>
     <hr>

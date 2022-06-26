@@ -88,7 +88,8 @@
             <div>
                 <div>
                     <h2>This Week Deals</h2>
-                    <p>307days : 15hours : 33min : 12sec</p>
+                    <p><?php echo date("l jS \of F Y H:i:s A");
+?></p>
                 </div>
                 <p>View All Deals ></p>
             </div>

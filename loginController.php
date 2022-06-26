@@ -1,14 +1,14 @@
 <?php
 
 require_once 'config/DAO.php';
-
-
+session_start();
 $action = isset($_REQUEST["action"])? $_REQUEST["action"] : ""; 
 
 if ($_SERVER['REQUEST_METHOD']=="POST"){
     if ($action == 'LOGIN') {
         $email = isset($_POST["email"])? test_input($_POST["email"]) : ""; 
         $password = isset($_POST["password"])? test_input($_POST["password"]) : ""; 
+       
       
         $dao = new DAO();
         $em = $dao->selectUserByEmailAndPassword($email,$password);
@@ -25,14 +25,14 @@ if ($_SERVER['REQUEST_METHOD']=="POST"){
             }
 
            include_once 'shop.php';
+        
         }else{
             $msg = "Pogresni parametri za logovanje!!!";
             include_once 'index.php';
-        }
-        
-    } 
-    
-} elseif ($_SERVER['REQUEST_METHOD']=="GET"){
+        }   
+    }  
+
+}elseif ($_SERVER['REQUEST_METHOD']=="GET"){
     if ($action == 'logout') {
         session_start();
         session_unset();
@@ -43,14 +43,12 @@ if ($_SERVER['REQUEST_METHOD']=="POST"){
         
     }elseif ($action == 'akcijaGet3'){
         
-    }
-    
+    }  
 } else {
     
     header("Location: index.php"); 
     die();
 }
-
 function test_input($data){
     $data = trim($data);
     $data = stripslashes($data);
