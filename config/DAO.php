@@ -17,7 +17,7 @@ class DAO {
 	private $SELECT_ORDERS="SELECT * FROM orders";
 	private $SELECT_ORDERS_DETAILS="SELECT * FROM ordersdetails";
 	private $INSERT_ORDER="INSERT into orders(address,order_name,date) VALUES(?,?,?)";
-	private $DELETE_ORDER = "DELETE  FROM orders WHERE order_id = ?";
+	private $DELETE_ORDER = "DELETE FROM orders WHERE order_id=?";
 
 	public function __construct()
 	{
@@ -126,9 +126,9 @@ class DAO {
 	{
 		$statement = $this->db->prepare($this->DELETE_ORDER);
 		$statement->bindValue(1, $order_id);
-		
 		$statement->execute();
 	}
+
 
 	public function insertUserWithType($name, $surname, $email,$username, $password)
 	{

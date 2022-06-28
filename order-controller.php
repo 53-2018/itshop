@@ -17,23 +17,39 @@
       $dao->insertOrder($adress,$type,$date);
       include_once 'orders.php';
    }
-   elseif($action=='Update'){
-      $order_id=isset($_POST["order_id"])? test_input($_POST["order_id"]):"";
+   elseif ($action == 'update') {
+      $order_id = isset($_POST["order_id"])? test_input($_POST["order_id"]) : "";
+      $model = isset($_POST["model"])? test_input($_POST["model"]) : "";
+      $address = isset($_POST["address"])? test_input($_POST["address"]) : "";
+      $city = isset($_POST["city"])? test_input($_POST["city"]) : "";
       $dao=new DAO();
-      $dao->deleteOrder($order_id);
+     // $dao->updateOrder($model,$address,$city,$order_id);
       include_once 'orders.php';
-     
-   }
+  }
 
 }  
+if ($_SERVER['REQUEST_METHOD']=="GET"){
+   
+   
+   if ($action == 'delete') {
+       $order_id = isset($_GET["order_id"])? test_input($_GET["order_id"]) : "";
+       $dao=new DAO();
+       $dao->deleteOrder($_GET['order_id']);
+       include 'orders.php';
 
-else{
-   header("Location:index.php");
+   } 
+ 
+} else {
+   //...
+   header("Location: index.php"); //opciono
+   die();
 }
+
+//funkcija za preradu unetih podataka
 function test_input($data){
-   $data=trim($data);
-   $data=stripslashes($data);
-   $data=htmlspecialchars($data);
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
    return $data;
 }
-?>
+

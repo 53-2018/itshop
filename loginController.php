@@ -9,6 +9,11 @@ if ($_SERVER['REQUEST_METHOD']=="POST"){
         $email = isset($_POST["email"])? test_input($_POST["email"]) : ""; 
         $password = isset($_POST["password"])? test_input($_POST["password"]) : ""; 
        
+        if ($email == "" || $password == "") {
+            $msg = "<p style='color: red;margin-left:5rem'>Fill in all fields!</p>";
+            include_once 'login.php';
+        }
+        else{ 
       
         $dao = new DAO();
         $em = $dao->selectUserByEmailAndPassword($email,$password);
@@ -30,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD']=="POST"){
             $msg = "Pogresni parametri za logovanje!!!";
             include_once 'index.php';
         }   
-    }  
+    } 
+} 
 
 }elseif ($_SERVER['REQUEST_METHOD']=="GET"){
     if ($action == 'logout') {
