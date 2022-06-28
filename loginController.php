@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST"){
         $em = $dao->selectUserByEmailAndPassword($email,$password);
         if($em){
       
-            session_start();
+            
             $_SESSION['email'] = $em;
             $_SESSION['last-active'] = time();
         

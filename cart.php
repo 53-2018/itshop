@@ -2,73 +2,55 @@
     if(!isset($_SESSION)) session_start();
     if($_SESSION['cart']!=''){
         $cart = $_SESSION['cart'];
-        //var_dump($cart);
-        include_once 'config/DAO.php';
+       // var_dump($cart);
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
-    <style>
-        td {
-            height: 80px;
-            width: 160px;
-            text-align: center;
-            vertical-align: middle;
-        }
-        tr:last-child > td{
-            text-align: right;
-        }
-    </style>
     <title>Cart</title>
-</head>
-<body>
-    <?php include_once 'header.php'; ?>
+
+ <div class="container"> 
+    <?php include_once 'header.php' ?>
           <!--navigation-->
-   
+
     <h1 class="text-center py-3">CART</h1>
     <div class="container table-cart">
         <table class="table table-striped table-bordered table-hover">
             <thead class="thead-dark">
-                <tr>
+            <tr>
                     <th>Id</th>
                     <th>Name</th>
                     <th>Price</th>
-                   
+                    <th>Image</th>
+                    <th>Id Type</th>
+                    <th>Id brand</th>
                 </tr>
             </thead>
         <?php
-           $dao=new DAO();
-           $cart=$dao->selectProducts();
-             for($i=0;$i<count($cart);$i++){?>  
-        
-                <tr>
-                <td><?=$cart[$i]['id']?></td>  
-                    <td><?=$cart[$i]['name'] ?></td>
-                    <td><?=$cart[$i]['price'] ?></td>
-                    
+            foreach($cart as $c){
+        ?>
+                  <tr>
+                    <td><?=$c['id'] ?></td>
+                    <td><?=$c['name'] ?></td>
+                    <td><?=$c['price'] ?> $</td>
+                    <td><img src="image/<?=$c['image'] ?>" width="60px" height="60px" alt=""></td>
+                    <td><?=$c['id_type'] ?></td>
+                    <td><?=$c['id_brand'] ?></td>
                 </tr>
         <?php 
             }
         ?>
         <tr >
-            <td colspan="7"><a href="./cart-controller.php?action=Charge"><input type="button" value="Charge"></a></td>
+            <td colspan="7"><a href="cart-controller.php?action=Charge"><input type="button" class="btn btn-warning" value="Charge"></a></td>
         </tr>
+        <ul class="nav-item active">
+         <a class="nav-link" href="cart-controller.php?action=empty"><input type="button" class="btn btn-warning" value="Empty Cart"></a>
+        </ul>
 
         </table>
     </div>
-    <?php include_once 'footer.php'; ?>
 
-</body>
-</html>
+
 <?php
     }else{
         header('Location: shop.php');
     }
 ?>
-
+</div>

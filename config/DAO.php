@@ -12,6 +12,7 @@ class DAO {
 	private $INSERT_USER_TYPES="INSERT into user_types(name) VALUES(?)";
 	private $INSERT_USERS="INSERT into user(name, surname, email, username, password, id_user_types) VALUES(?,?,?,?,?)";
 	private $SELECT_USERS="SELECT * FROM users";
+	private $GET_PRODUCT_BY_ID = "SELECT * FROM products WHERE id=?";
 
 	private $SELECT_ORDERS="SELECT * FROM orders";
 	private $SELECT_ORDERS_DETAILS="SELECT * FROM ordersdetails";
@@ -42,6 +43,15 @@ class DAO {
 		$statement->execute();
 		
 		$result = $statement->fetchAll();
+		return $result;
+	}
+	public function getProductById($id){
+		$statement = $this->db->prepare($this->GET_PRODUCT_BY_ID);
+		$statement->bindValue(1, $id);
+
+		$statement->execute();
+		
+		$result = $statement->fetch();
 		return $result;
 	}
 	

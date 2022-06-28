@@ -99,7 +99,7 @@ require_once './config/DAO.php';
 
 
 <section id="pre_futera">
-   <div class="row">
+   <div class="row mt-4">
        <div class="col md-2">
         <img src="img/logo.png" width="40px" alt=""> CAMERAX
        </div>
@@ -134,7 +134,9 @@ include_once 'footer.php';
       
 
     </script>
-        <script src="filter.js"></script>
+       <?php
+       include_once 'filter.php';
+       ?>
 
 </body>
 

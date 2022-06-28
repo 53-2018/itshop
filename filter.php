@@ -1,3 +1,6 @@
+
+<script>
+    
 let checkedBrands = [];
 for (let i = 0; i < brands.length; i++) 
 {
@@ -57,7 +60,10 @@ function displayProducts(checked, type)
                     <p>${products[i].name}</p>
                     <img src="image/rating.png" alt="" class="rating-img">
                     <p><span>${products[i].price}$</span></p>
-                    <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
+                    <a href="cart-controller.php?action=addToCart&id=${products[i].id}"><button type="button" class="btn btn-danger"  name="action" value="addToCart">Add to cart</button></a>             
+            
+                       </div>
+            </div>
             `;
         }
     }
@@ -77,8 +83,10 @@ function showAllProduct()
                 <h4>${products[i].name_manufacturer} ${products[i].name_brand}</h4>
                 <img src="image/rating.png" alt="" class="rating-img">
                 <p><span>${products[i].price}$</span></p>
-                <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
-                </div>
+                <a href="cart-controller.php?action=addToCart&id=${products[i].id}"><button type="button" class="btn btn-danger"  name="action" value="addToCart">Add to cart</button></a>             
+          
+                   </div>
+            </div>
         </div>
         `;
     }
@@ -117,8 +125,9 @@ function showByCategories(category)
                         <p>${products[i].name}</p>
                         <img src="image/rating.png" alt="" class="rating-img">
                         <p><span>${products[i].price}$</span></p>
-                        <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
-                        </div>
+                        <a href="cart-controller.php?action=addToCart&id=${products[i].id}"><button type="button" class="btn btn-danger"  name="action" value="addToCart">Add to cart</button></a>             
+                          </div>
+                    </div>
                 </div>
                 `;
             }
@@ -153,8 +162,11 @@ function showByPrice()
                     <p>${products[i].name}</p>
                     <img src="image/rating.png" alt="" class="rating-img">
                     <p><span>${products[i].price}$</span></p>
-                    <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
-                    </div>
+                    <a href="cart-controller.php?action=addToCart&id=${products[i].id}"><button type="button" class="btn btn-danger"  name="action" value="addToCart">Add to cart</button></a>             
+         
+                         </div>
+
+                </div>
             </div>
             `;
         }
@@ -183,12 +195,17 @@ function showSearched()
                     <p>${products[i].name}</p>
                     <img src="image/rating.png" alt="" class="rating-img">
                     <p><span>${products[i].price}$</span></p>
-                    <a href='cart-controller.php?action=addToOrder&id_product=${products[i].id}'> Add to orders </a>                    </div>
-                    </div>
+                    <a href="cart-controller.php?action=addToCart&id=${products[i].id}"><button type="button" class="btn btn-danger"  name="action" value="addToCart">Add to cart</button></a>             
+           
+                       </div>
+                </div>
             </div>
             ` ;
         }
     }
     if(tmp==0)
     document.getElementById('article-cards').innerHTML +="Nema artikala za zadatu pretragu!";
+
 }
+
+</script>

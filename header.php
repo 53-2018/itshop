@@ -54,7 +54,7 @@
         <p>Need help? Call Us:</p>
        <p>012 345 7892</p>
     </div>
-    <divi id="icons" class="col-sm">
+    <div id="icons" class="col-sm">
     <p>
                 
                 <p>
@@ -70,9 +70,9 @@
         <strong>
 
         </strong>
-        <img src="img/user.png" width="15px" alt="">0
-        <img src="img/heart.png" width="15px" alt=""> 0
-       <a href="cart.php">  <img src="img/shopping-bag.png" width="15px" alt=""></a>
+        <img src="img/user.png" width="25px" alt="">0
+        <img src="img/heart.png" width="15px" alt="">
+       <a href="cart.php">  <img src="img/shopping-bag.png" width="25px" alt=""></a>
     </div>
     </section>
     <hr>
@@ -99,6 +99,7 @@
                 </a>
                 <a href="index.php">BLOGS</a>
                 <a href="contact.php">CONTACT</a>
+                
                 <input type="text" onkeyup="showSearched()" placeholder="Search our catalog" id="search-bar" name="search" >
                 <button type="submit"> <img src="image/search.png" height="29px" width="29px"> </button>
                 
